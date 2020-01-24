@@ -2,21 +2,24 @@
 
 //Front-end Logic
 
-var vowel = function(sentence) {
-  if ((sentence.charAt(0) === "a") || (sentence.charAt(0) === "e") || (sentence.charAt(0) === "i") || (sentence.charAt(0) === "o") || (sentence.charAt(0) === "u")) {
-    alert("yay")
-}
+var vowels = ("a","e","i","o","u")
+var consonants = ("b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z")
+var arr1 = []
 
 //Back-end
 
 $(document).ready(function() {
   $("form#pigLatinForm").submit(function (event) {
     event.preventDefault();
-    sentence = ($("input#pigLatin").val()).split;
+    sentence = ($("input#pigLatin").val()).split(" ");
+    for (i=0; arr1.length -1; i++)
+      if (i = vowels){
+        $("#result").append("way")
+      }
     console.log("works");
+    console.log(sentence);
   }); 
 });
-};
   //     var firstCharacter = sentence.charAt(0);
   //     var lastCharacter = sentence[sentence.length-1];
   //     alert(firstCharacter.toUpperCase() + lastCharacter.toUpperCase());
